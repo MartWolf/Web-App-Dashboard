@@ -1,0 +1,512 @@
+body {
+    margin: 0;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(116, 119, 191);
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 35px;
+    color: gray;
+    margin: 0;
+}
+
+h2 {
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Classes */
+
+.profile-pictures{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px; 
+}
+
+.profile-pictures{
+    margin: 15px;
+}
+
+.sidebar-icons{
+    max-width: 40px;
+    margin: 10px;
+}
+
+.header,.profile-picture,.student_name,.border,.alert, .companylogos, .send_button, .img_background, .save_button,#profile:checked, #email_notifications:checked {
+    background-color:rgb(116, 119, 191);
+}
+
+.border2, .border3, .border4, .border5, .border6, .border7, .border8{
+    border: gray solid 1px;
+    opacity: 0.4;
+
+}
+
+.traffic-chart, .daily-traffic-chart, .mobileuser-chart{
+    margin: auto;
+    height: 300px;
+    height: 50vw;
+    margin: 20px;
+    min-width: 260px;
+    min-height: 200px;
+    max-height: 600px;
+}
+
+.mobileuser-chart{
+    height: 45vw;
+    max-height: 500px;
+}
+
+.right_margin{
+    margin-right: 10px;
+}
+
+.title{
+    margin-left: 10px;
+}
+
+.header_profile-picture{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px; 
+}
+
+.notification{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(6, 233, 6);
+    border-radius: 50px;
+    height: 8px;
+    width: 8px;
+}
+
+.bell{
+    height: 35px;
+    width: 20px;
+    position:relative;
+}
+
+.bell:hover{
+    transform: translate(-50%, 0);
+    transition: left .3s;
+}
+
+.border{
+    border-style: none solid none none;
+    height: 50px;
+    margin: 15px;
+    border-color: rgb(131, 135, 179)
+}
+
+.student_name{
+    font-size: 1rem;
+    margin: 0 5px;
+}
+
+.social-stat{
+    margin: 5px 0;
+    display: grid;
+    grid-template-rows: 3fr;  
+    gap: 10px; 
+}
+
+.social_box{
+    border: rgba(128, 128, 128, 0.4) solid 1px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    color: rgb(119, 119, 119);
+    margin: 0 20px;
+}
+
+.social-box-text > p {
+    font: 1.8rem sans-serif;
+    margin: inherit;
+}
+
+.social-box-text > a {
+    margin: inherit;
+    font: 1.4rem sans-serif;
+}
+
+.img_background{
+    border: rgb(116, 119, 191) solid 3px;
+    width: 60px;
+    height: 60px ;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.companylogos{
+    height: 50px;
+    width: 30px;
+    border-radius: 50px;
+    margin: 5px 0 0 15px;
+    position: absolute;
+}
+
+.member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.member_text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.member_date{
+    align-self: flex-end;
+    justify-self:flex-end;
+}
+
+.bottom_border{ 
+    border-bottom: gray solid 1px;
+}
+
+.send_button{
+    border-color: transparent;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.checkbox_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    margin: 30px 0;
+    font-size: large;
+}
+
+.setting_box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 57px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.save_button, .cancel_button{
+    width: 49%;
+    margin: 15px 0;
+    height: 40px;
+    border-radius: 5px;
+    border-color:transparent;
+    color: white;
+}
+
+.cancel_button{
+    background-color: gray;
+}
+
+/* Ids */
+
+#message, #search, .send_button{
+    width: 98%;
+}
+
+#message, #search{
+    border-radius: 5px;
+    min-height: 40px;
+    margin: 5px 0;
+}
+
+#timezone{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    color: rgb(116, 119, 191);
+}
+
+/* Grids */
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      "h1 h1 h1 h1 h1"
+      "si si si si si"
+      "da fi fi fi fi"
+      "al al al al al"
+      "tc tc tc tc tc"
+      "b2 b2 b2 b2 b2"
+      "dt dt dt dt dt"
+      "b3 b3 b3 b3 b3"
+      "mo mo mo mo mo"
+      "b4 b4 b4 b4 b4"
+      "so so so so so"
+      "b5 b5 b5 b5 b5"
+      "nm nm nm nm nm"
+      "b6 b6 b6 b6 b6"
+      "ra ra ra ra ra"
+      "b7 b7 b7 b7 b7"
+      "mu mu mu mu mu"
+      "b8 b8 b8 b8 b8"
+      "se se se se se"
+    ;
+}
+
+.header{ 
+    grid-area: h1;
+    display: grid;
+    grid-template-columns: auto min-content min-content min-content max-content;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+
+.sidebar {
+    grid-area: si;
+    background-color: rgb(77, 76, 114);
+    height: auto;
+    width: auto;
+    font-size: 10px;
+    text-align: center;
+}
+    
+.dashboard {
+    grid-area: da;
+    text-align: center;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.filler-box { 
+    grid-area: fi;
+    background-color: rgb(247, 247, 247);
+    border-color: rgba(204, 204, 204, 0.5);
+    border-style: none none solid solid;
+    border-width: 1px;
+}
+
+.traffic-chart{
+    grid-area: tc;
+}
+
+.daily-traffic-chart{
+    grid-area: dt;
+}
+
+.mobileuser-chart{
+    grid-area: mo;
+}
+
+.social-stat-grid{
+    grid-area: so;
+}
+
+.new_members{
+    grid-area: nm;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.recent_activity_grid{
+    grid-area: ra;
+}
+
+.message_user{
+    grid-area: mu;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 10px;
+}
+
+.settings{
+    grid-area: se;
+    margin: 0 10px;
+}
+
+.border2{
+    grid-area: b2;
+}
+.border3{
+    grid-area: b3;
+}
+.border4{
+    grid-area: b4;
+}
+.border5{
+    grid-area: b5;
+}
+.border6{
+    grid-area: b6;
+}
+.border7{
+    grid-area: b7;
+}
+.border8{
+    grid-area: b8;
+}
+
+.members_link{
+    display: none;
+    font-size: large;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .grid-container{
+        grid-template-areas: 
+        "h1 h1 h1 h1 h1 h1"
+        "si da fi fi fi fi"
+        "si al al al al al"
+        "si tc tc tc tc tc"
+        "si b2 b2 b2 b2 b2"
+        "si dt dt b3 mo mo"
+        "si b4 b4 b4 b4 b4"
+        "si so so so so so"
+        "si b5 b5 b5 b5 b5"
+        "si nm nm nm nm nm"
+        "si b6 b6 b6 b6 b6"
+        "si ra ra ra ra ra"
+        "si b7 b7 b7 b7 b7"
+        "si mu mu mu mu mu"
+        "si b8 b8 b8 b8 b8"
+        "si se se se se se"
+      ;
+    }
+    .border3{
+        width: min-content;
+    }
+    .new_members{
+        justify-content: flex-start;      
+    }
+    .member{
+        text-align: left;
+        margin: 0px; 
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    .member_text{
+        text-align: left;
+    }
+    .sidebar{
+        width: 83px;
+    }
+    .social-stat{
+    margin: 5px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 10px; 
+    }
+    .social-box-text > p {
+        font: 1.35rem sans-serif;
+    }
+    .members_link{
+        display: contents;
+    }
+    .dashboard {
+        margin: 15px 20px;
+    }
+    .header_profile-picture{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-container{
+        grid-template-areas: 
+        "h1 h1 h1 h1 h1 h1"
+        "si da fi fi fi fi"
+        "si al al al al al"
+        "si tc tc tc tc tc"
+        "si b2 b2 b2 b2 b2"
+        "si dt dt b3 mo mo"
+        "si b4 b4 b4 b4 b4"
+        "si so so so so so"
+        "si b5 b5 b5 b5 b5"
+        "si nm nm b6 ra ra"
+        "si b7 b7 b7 b7 b7"
+        "si mu mu b8 se se"
+      ;
+    }
+    .social-box-text > p {
+    font: 3rem sans-serif;
+    }
+}
+    
+/* Alert Message */
+
+.alert {
+    grid-area: al;
+    padding: 15px;
+    margin: 15px 20px;
+    color: white;
+    border-radius: 10px;
+    height: min-content;
+    font-size: smaller;
+}
+  
+.closebtn {
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;   
+}
+  
+.closebtn:hover {
+    color: black;
+}
+
+/* Checkbox */
+
+#profile, #email_notifications {
+    -webkit-appearance: none;
+    position: relative;
+    width: 70px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #ccc;
+    transition: background .3s;
+    outline: none;
+    cursor: pointer;
+}
+
+#profile::after, #email_notifications::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: rgb(255, 255, 255);
+    transition: left .3s;
+}
+
+#profile:checked::after, #email_notifications:checked::after {
+    left: 80%;
+}

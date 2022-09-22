@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+<title>Web App Dashboard</title>
+</head>
+<body>
+    
+    <div class="grid-container">
+        
+        <div class="header">
+
+          <div class="title">
+            <strong>Web</strong>App&#8482;
+          </div>
+
+          <div class="bell">
+            <div class="notification"></div>
+            <img src="svgs/bell.svg" alt="alert bell" class="bell">
+          </div>  
+
+          <div>
+            <div class="border"></div>
+          </div>
+
+          <img src="images/member-1.jpg" class="header_profile-picture" alt="student picture">
+
+          <div class="student_name">
+             Student Name
+          </div>
+          
+        </div>
+        
+      <div class="sidebar">
+        <a href="#"><img src="svgs/home.svg" class="sidebar-icons" alt="home icon"></a>
+        <a href="#chart"><img src="svgs/bar-chart.svg" class="sidebar-icons" alt="bar icon"></a>
+        <a href="#members"><img src="svgs/members.svg" class="sidebar-icons" alt="members icon"></a>
+        <a href="#setting"><img src="svgs/settings.svg" class="sidebar-icons" alt="setting icon"></a>
+      </div>
+
+      <div class="dashboard">
+        <strong>Dashboard</strong>
+      </div>
+
+      <div class="filler-box">
+      </div>
+
+
+      <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Alert:</strong> You have unread messages
+      </div>
+
+      <div class="traffic-chart" id="chart">
+        <canvas id="mychart"></canvas>
+      </div>
+
+      <div class="border2"></div>
+
+      <div class="daily-traffic-chart">
+          <canvas id="daily-traffic"></canvas>
+      </div>
+
+      <div class="border3"></div>
+
+      <div class="mobileuser-chart">
+        <canvas id="mobileuser"></canvas>
+      </div>
+
+      <div class="border4"></div>
+
+      <div class="social-stat-grid">
+          <h2>SOCIAL STATS</h2>
+
+        <div class="social-stat">
+
+          <div class="social_box">
+            <div class="img_background">
+              <img src="svgs/facebook.svg" class="companylogos" alt="facebook company logo"> 
+            </div >
+            <div class="social-box-text">
+              <a href="">Facebook</a>
+              <p>10,320</p>
+            </div>
+          </div>
+
+          <div class="social_box">
+            <div class="img_background">
+              <img src="svgs/instagram.svg" class="companylogos" alt="instagram company logo">
+            </div>
+              <div class="social-box-text">
+                <a href="">Instagram</a>
+                <p>16,445</p>
+              </div>
+          </div>
+
+          <div class="social_box">
+            <div class="img_background">
+              <img src="svgs/twitter.svg" class="companylogos" alt="twitter company logo">  
+            </div>
+            <div class="social-box-text">
+              <a href="">Twitter</a>
+              <p>22,189</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="border5"></div>
+
+      <div class="new_members" id="members">
+        <div>
+            <h2>NEW MEMBERS</h2>
+        </div>
+
+        <div class="member bottom_border">
+          <div class="member">
+            <img src="images/member-1.jpg" alt="profile picture" class="profile-pictures">
+            <div class="member_text">
+              Victoria Chambers
+              <a href=""> Victoria.Chambers@example.com</a>
+            </div>
+          </div>
+        <div class="right_margin">10/15/20</div>
+        </div>
+
+        <div class="member bottom_border">
+          <div class="member">
+            <img src="images/member-2.jpg" alt="profile picture" class="profile-pictures">
+            <div class="member_text">
+            Dale Byrd
+            <a href=""> dale.byrd52@example.com</a>
+            </div>
+          </div>
+          <div class="right_margin">10/15/20</div>
+        </div>
+
+        <div class="member bottom_border">
+          <div class="member">
+            <img src="images/member-3.jpg" alt="profile picture" class="profile-pictures">
+            <div class="member_text">
+            Dawn Wood
+            <a href=""> dawn.wood16@example.com</a>
+            </div>
+          </div>
+          <div class="right_margin">10/15/20</div>
+        </div>
+
+        <div class="member">
+          <div class="member">
+          <img src="images/member-4.jpg" alt="profile picture" class="profile-pictures">
+          <div class="member_text">
+          Dan Oliver
+          <a href=""> Dan.oliver82@example.com</a>
+            </div>
+          </div>
+          <div class="right_margin">10/15/20</div>
+        </div>
+        
+      </div>
+
+      <div class="border6"></div>
+
+      <div class="recent_activity_grid">
+        <div>
+           <h2>RECENT ACTIVITY</h2>
+        </div>
+
+        <div class="member bottom_border">
+          <div class="member">
+            <img src="images/member-1.jpg" alt="profile picture" class="profile-pictures">
+            <div>
+              <p>Victoria Chamber commented on <strong>WebApp's Seo Tips</strong></p> 
+              <div> 4 hours ago</div>
+            </div>
+          </div>
+          <div class="members_link"><a href="" class="right_margin">&gt;</a></div>
+        </div>
+
+        <div class="member bottom_border">
+          <div class="member">
+            <img src="images/member-2.jpg" alt="profile picture" class="profile-pictures">
+            <div>
+              <p>Dale Byrd liked the post <strong>Facebook's Changes for 2021</strong></p>
+              <div>5 hours ago</div>
+            </div>
+          </div>
+          <div class="members_link"><a href="" class="right_margin">&gt;</a></div>
+        </div>
+
+        <div class="member bottom_border">
+          <div class="member">
+            <img src="images/member-3.jpg" alt="profile picture" class="profile-pictures">
+            <div>
+              <p>Dawn Wood commented on <strong>Facebook's Changes for 2021</strong> </p>
+              <div>5 hours ago</div>
+            </div>
+          </div>
+          <div class="members_link"><a href="" class="right_margin">&gt;</a></div>
+        </div>
+
+        <div class="member">
+          <div class="member">
+            <img src="images/member-4.jpg" alt="profile picture" class="profile-pictures">
+              <div>
+                <p>Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
+                <div>1 day ago</div>
+            </div>
+          </div>
+          <div class="members_link"><a href="" class="right_margin">&gt;</a></div>
+        </div>
+      </div>
+
+      <div class="border7"></div>
+      
+      <div class="message_user">
+
+          <div>
+            <h3>MESSAGE USER</h3> 
+          </div>
+          <form id="myform">
+        <div>
+          <input type="text" name="search_for_user" id="search" placeholder="Search for User">
+        </div>
+        <div>
+            <textarea name="message_for_user" id="message" cols="30" rows="10" placeholder="Message for User"></textarea>
+        </div>
+        <div>
+            <input type="submit" class="send_button" value="SEND" id="send"></button>
+        </div>
+      </form>
+      </div>
+
+      <div class="border8"></div>
+
+      <div class="settings" id="setting">
+
+        <div>
+          <h3>SETTINGS</h3>
+        </div>
+        
+        <div class="checkbox_box">
+        <label for="email_notifications">Send Email Notifications</label><br>
+        <input type="checkbox" id="email_notifications">
+        </div>
+
+        <div class="checkbox_box">
+          <label for="profile">Set Profile to Public</label>
+          <input type="checkbox" id="profile">
+        </div>   
+
+        
+        <div class="setting_box">
+          <select name="timezone" id="timezone">                        
+            <option value="" disabled selected hidden>Select Timezone</option>
+            <option value="UTC+1">UTC+1</option>
+            <option value="UTC+2">UTC+2</option>
+            <option value="UTC+3">UTC+3</option>
+            <option value="UTC+4">UTC+4</option>
+            <option value="UTC+5">UTC+5</option>
+            <option value="UTC+6">UTC+6</option>
+            <option value="UTC+7">UTC+7</option>
+            <option value="UTC+8">UTC+8</option>
+          </select>
+        
+
+          <div class="buttons">
+            <button class="save_button">SAVE</button> 
+            <button class="cancel_button">CANCEL</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>  
+      <script src="js/script.js"></script>
+</body>
+
+</html>
